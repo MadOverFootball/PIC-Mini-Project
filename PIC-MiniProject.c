@@ -22,12 +22,12 @@ void main()
   {
   printf("\t\t\t  Enter your choice:\n\t\t\t  1.Pizza\n\t\t\t  2.Appetizers\n\t\t\t  3.Bevarages&Desserts\n\t\t\t  4.Bill\n");
   scanf("%d",&choice);
-  switch(choice)
+  switch(choice)// Switch case for different choices
   {
     case 1:
     {
       flag=0;
-      Pizza();
+      Pizza();// Calling function Pizza
       break;
     }
     case 2:
@@ -69,7 +69,7 @@ int Pizza()
   char pizzas[10][100]={"Garden Fresh\t\t\tRs.340","Chef's Favourite\t\tRs.370","Mexican Bonanza\t\t\tRs.370",
 "Paneer Makhani\t\t\tRs.450","Vegetarian Feast\t\tRs.585",
 "Chicken Tikka\t\t\tRs.470","Joeys's Special\t\t\tRs.625",
-"Italian Special\t\t\tRs.470","Tornado\t\t\t\tRs.575","Chicken Feast\t\t\tRs.650"};
+"Italian Special\t\t\tRs.470","Tornado\t\t\t\tRs.575","Chicken Feast\t\t\tRs.650"};// Defining elements of 2-D character array pizza
 int pizzacost[10]={340,370,370,450,585,470,625,470,575,650};
 printf("Veg Pizzas:\n\n");
   for(int i=0;i<10;i++)
@@ -160,7 +160,7 @@ int Appetizers()
 "Super Cheese Garlic Bread-NonVegRs.160","Cheese Sticks \t\t\tRs.110",
 "Garden Fresh\t\t\tRs.170","Tuna\t\t\t\tRs.250",
 "Roasted Chicken\t\t\tRs.230","Chciken Crust Sandwich\t\tRs.190","Paneer Cheese Sandwich\t\tRs.160"};
-int appetizerscost[10]={75,110,120,160,110,170,250,230,190,160};
+int appetizerscost[10]={75,110,120,160,110,170,250,230,190,160};// Initializing cost of various appetizers
 printf("Appetizers:\n\n");
   for(int i=0;i<10;i++)
   {
